@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Memorator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="stats">
+		<p>
+			Learned: <span class="text-success" id="correctCount"></span>&nbsp;/&nbsp;<span id="totalCount"></span><br>
+			Not Learned: <span class="text-danger" id="wrongCount"></span>&nbsp;/&nbsp;<span id="total2Count"></span><br>
+			Tries: <span id='triesAmt'></span>
+		</p>
+	</div>
+	<div class="col-xs-6" id="screen">
+		<div class="col-xs-12 text-center">
+			<h2 id="lemma">LEMMA</h2>
+			<input id="meaning" class="form-control text-center" type="text" placeholder="Betekenis"><br>
+			<span id="hint"></span>
+
+		</div>
+	</div>
+	<div id='settings'>
+		<span>Order: <span id='wordOrdered' class='btn btn-primary'>Ordered</span>&nbsp;<span id='wordRandom' class='btn btn-outline-primary'>Random</span></span>
+	</div>
+	<script src="js/lib/jquery-3.2.1.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/word.js"></script>
+</body>
+
+</html>
